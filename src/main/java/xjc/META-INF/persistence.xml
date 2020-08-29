@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence version="1.0" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd
+http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:orm="http://java.sun.com/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <persistence-unit name="https.www_wcio_org.xml.wcstat:referencedatamodel:reportschedulemodel:subjectheadertypemodel">
+        <class>https.www_wcio_org.xml.wcstat.Address</class>
+        <class>https.www_wcio_org.xml.wcstat.Name</class>
+        <class>https.www_wcio_org.xml.wcstat.Submission</class>
+        <class>https.www_wcio_org.xml.wcstat.Submission$FileControl</class>
+        <class>https.www_wcio_org.xml.wcstat.Submission$Wcstats</class>
+        <class>https.www_wcio_org.xml.wcstat.Submission$Wcstats$Wcstat</class>
+        <class>https.www_wcio_org.xml.wcstat.Submission$Wcstats$Wcstat$Exposures</class>
+        <class>https.www_wcio_org.xml.wcstat.Submission$Wcstats$Wcstat$Exposures$Exposure</class>
+        <class>https.www_wcio_org.xml.wcstat.Submission$Wcstats$Wcstat$Insured</class>
+        <class>https.www_wcio_org.xml.wcstat.Submission$Wcstats$Wcstat$Losses</class>
+        <class>https.www_wcio_org.xml.wcstat.Submission$Wcstats$Wcstat$Losses$Loss</class>
+        <class>https.www_wcio_org.xml.wcstat.Submission$Wcstats$Wcstat$Losses$Loss$Beneficiaries</class>
+        <class>https.www_wcio_org.xml.wcstat.Submission$Wcstats$Wcstat$Losses$Loss$Beneficiaries$Beneficiary</class>
+        <class>https.www_wcio_org.xml.wcstat.Submission$Wcstats$Wcstat$Losses$Loss$ScheduledIndemnities</class>
+        <class>https.www_wcio_org.xml.wcstat.Submission$Wcstats$Wcstat$Losses$Loss$ScheduledIndemnities$ScheduledIndemnity</class>
+        <class>https.www_wcio_org.xml.wcstat.Transmittal</class>
+        <class>referencedatamodel.ReferenceData</class>
+        <class>referencedatamodel.ReferenceData$SubjectHeaders</class>
+        <class>referencedatamodel.ReferenceData$SubjectHeaders$SubjectHeader</class>
+        <class>referencedatamodel.ReferenceData$SubjectHeaders$SubjectHeader$States</class>
+        <class>referencedatamodel.ReferenceData$SubjectHeaders$SubjectHeader$States$State</class>
+        <class>reportschedulemodel.ReportSchedule</class>
+        <class>subjectheadertypemodel.SubjectHeaderType</class>
+    </persistence-unit>
+</persistence>

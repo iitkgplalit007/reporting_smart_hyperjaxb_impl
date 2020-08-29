@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+        <property name="hibernate.connection.url">jdbc:sqlserver://N6086\MSSQLSERVER2014;databaseName=NCCI_WCSTAT_DATA</property>
+        <property name="hibernate.connection.username">sa</property>
+        <property name="hibernate.connection.password">A!kira132017</property>
+        <property name="hibernate.connection.pool_size">1</property>
+        <property name="hibernate.current_session_context_class">thread</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.cache.provider_class">org.hibernate.cache.HashtableCacheProvider</property>
+        <property name="hibernate.auto-import">false</property>
+        <property name="hbm2ddl.import_files">src/main/resources/create.sql</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
+        <property name="hibernate.default_schema">WCSTAT</property>
+        <property name="org.hibernate.envers.audit_table_suffix">_aud</property>
+        <property name="javax.persistence.validation.mode">none</property>
+    </session-factory>
+</hibernate-configuration>

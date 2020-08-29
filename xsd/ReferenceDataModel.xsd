@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<xsd:schema
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+      xmlns:gw="http://guidewire.com/xsd"
+      xmlns="http://guidewire.com/bc/gx/referencedatamodel"
+      targetNamespace="http://guidewire.com/bc/gx/referencedatamodel"
+      elementFormDefault="qualified" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"  jaxb:version="2.1"><xsd:annotation><xsd:appinfo><jaxb:schemaBindings><jaxb:package name="referencedatamodel"/></jaxb:schemaBindings></xsd:appinfo></xsd:annotation>
+  <xsd:element
+        name="ReferenceData" type="ReferenceData" nillable="true"/>
+  <xsd:complexType
+        name="ReferenceData">
+    <xsd:sequence>
+      <xsd:element name="DataType" minOccurs="0" nillable="true" type="xsd:int" gw:type="java.lang.Integer"/>
+      <xsd:element name="Length" minOccurs="0" nillable="true" type="xsd:int" gw:type="java.lang.Integer"/>
+      <xsd:element name="Precision" minOccurs="0" nillable="true" type="xsd:int" gw:type="java.lang.Integer"/>
+      <xsd:element name="Scale" minOccurs="0" nillable="true" type="xsd:int" gw:type="java.lang.Integer"/>
+      <xsd:element name="SchemaElementName" minOccurs="0" nillable="true" type="xsd:string" gw:type="java.lang.String"/>
+      <xsd:element name="SubjectHeaders" minOccurs="0" nillable="true">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="SubjectHeader" minOccurs="0" nillable="true" maxOccurs="unbounded">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:element name="EndPosition" minOccurs="0" nillable="true" type="xsd:string" gw:type="java.lang.String"/>
+                  <xsd:element name="Length" minOccurs="0" nillable="true" type="xsd:string" gw:type="java.lang.String"/>
+                  <xsd:element name="StartPosition" minOccurs="0" nillable="true" type="xsd:string" gw:type="java.lang.String"/>
+                  <xsd:element name="States" minOccurs="0" nillable="true">
+                    <xsd:complexType>
+                      <xsd:sequence>
+                        <xsd:element name="State" minOccurs="0" nillable="true" maxOccurs="unbounded">
+                          <xsd:complexType>
+                            <xsd:sequence>
+                              <xsd:element name="NameOfTheState" minOccurs="0" nillable="true" type="xsd:string" gw:type="java.lang.String"/>
+                              <xsd:element name="StateCode" minOccurs="0" nillable="true" type="xsd:string" gw:type="java.lang.String"/>
+                            </xsd:sequence>
+                           <!-- <xsd:attribute name="action" type="xsd:string" gw:type="gw.xml.xsd.ArrayAction"/> -->
+                          </xsd:complexType>
+                        </xsd:element>
+                      </xsd:sequence>
+                    </xsd:complexType>
+                  </xsd:element>
+                  <xsd:element name="SubjectHeader" minOccurs="0" nillable="true" type="xsd:string" gw:type="java.lang.String"/>
+                </xsd:sequence>
+               <!-- <xsd:attribute name="action" type="xsd:string" gw:type="gw.xml.xsd.ArrayAction"/> -->
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="TypeName" minOccurs="0" nillable="true" type="xsd:string" gw:type="java.lang.String"/>
+      <xsd:element name="WCStatElementName" minOccurs="0" nillable="true" type="xsd:string" gw:type="java.lang.String"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

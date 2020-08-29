@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<xsd:schema
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+      xmlns:gw="http://guidewire.com/xsd"
+      xmlns="http://guidewire.com/bc/gx/subjectheadertypemodel"
+      targetNamespace="http://guidewire.com/bc/gx/subjectheadertypemodel"
+      elementFormDefault="qualified" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"  jaxb:version="2.1"><xsd:annotation><xsd:appinfo><jaxb:schemaBindings><jaxb:package name="subjectheadertypemodel"/></jaxb:schemaBindings></xsd:appinfo></xsd:annotation>
+  <xsd:element
+        name="SubjectHeaderType" type="SubjectHeaderType" nillable="true"/>
+  <xsd:complexType
+        name="SubjectHeaderType">
+    <xsd:sequence>
+      <xsd:element name="SubjectHeading" minOccurs="0" nillable="true" type="xsd:string" gw:type="java.lang.String"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>
